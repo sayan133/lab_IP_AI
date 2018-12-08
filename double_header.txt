@@ -1,0 +1,3 @@
+double_header([],[]).
+double_header([X],[]).
+double_header([X,X1|T]):- X =:= X1.
