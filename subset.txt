@@ -1,0 +1,5 @@
+is_subset([], [H|T]).
+
+is_subset([H1|T1], [H2|T2]) :-
+    member(H1, [H2|T2]),    % membership rule (built-in)
+    is_subset(T1, [H2|T2]).
